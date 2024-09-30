@@ -241,7 +241,7 @@ class Prodigy(torch.optim.Optimizer):
                 if decay != 0 and decouple:
                     p.data.add_(p.data, alpha=-decay * dlr)
 
-                # Take step
+                ### Take step
                 p.data.addcdiv_(exp_avg, denom, value=-dlr)
 
             group['k'] = k + 1
