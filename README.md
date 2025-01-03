@@ -1,4 +1,8 @@
+> [!IMPORTANT] 
+> This repository is a fork. Modifications are available in the [multiple-param-groups branch](https://github.com/sangoi-exe/prodigy/tree/multiple-param-groups).
+
 # Prodigy: An Expeditiously Adaptive Parameter-Free Learner
+
 [![Downloads](https://static.pepy.tech/badge/prodigyopt)](https://pepy.tech/project/prodigyopt) [![Downloads](https://static.pepy.tech/badge/prodigyopt/month)](https://pepy.tech/project/prodigyopt)
 
 This is the official repository used to run the experiments in the paper that proposed the Prodigy optimizer. The optimizer is implemented in PyTorch.
@@ -11,6 +15,7 @@ Paper: https://arxiv.org/pdf/2306.06101.pdf
 ## Installation
 To install the package, simply run
 ```pip install prodigyopt```
+
 ## How to use
 Let `net` be the neural network you want to train. Then, you can use the method as follows:
 ```
@@ -27,7 +32,6 @@ will force a larger estimate of the learning rate; set it to 0.5 or even 0.1 if 
 Standard values of `weight_decay` to try are 0 (default in Prodigy), 0.001, 0.01 (default in AdamW), and 0.1.  
 Use values of `slice_p` larger than 1 to reduce the memory consumption. `slice_p=11` should give a good trade-off
  between accuracy of estimate learning rate and memory efficiency.
-
 
 ## Scheduler 
 As a rule of thumb, we recommend either using no scheduler or using cosine annealing with the method:
