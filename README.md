@@ -1,6 +1,13 @@
 > [!IMPORTANT] 
 > This repository is a fork. Modifications are available in the [multiple-param-groups branch](https://github.com/sangoi-exe/prodigy/tree/multiple-param-groups).
 
+> [!TIP]
+> If you're getting a 'slice_p' error while using Prodigy, install my version:
+> 
+> `pip install --force-reinstall --upgrade git+https://github.com/sangoi-exe/prodigy/tree/multiple-param-groups.git`
+> 
+> Don't forget to activate venv before running the command.
+
 # Prodigy: An Expeditiously Adaptive Parameter-Free Learner
 
 [![Downloads](https://static.pepy.tech/badge/prodigyopt)](https://pepy.tech/project/prodigyopt) [![Downloads](https://static.pepy.tech/badge/prodigyopt/month)](https://pepy.tech/project/prodigyopt)
